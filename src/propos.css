@@ -14,7 +14,11 @@ h1 {
     font-size: 2rem;
 }
 li {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin-left: 100px;
+}
+p {
+    font-size: 1.15rem;
 }
 
 /* LAYOUT */
@@ -39,6 +43,29 @@ li {
     transform: translateY(4px);
     box-shadow: 0 5px #666;
 }
+
+
+/* EXPLANATION */
+.explanation-container {
+    display: grid;
+    grid-template-areas: 
+    "exp-01 img"
+    "exp-02 img"
+    "exp-03 img";
+}
+#exp-01 {
+    grid-area: exp-01;
+}
+#exp-02 {
+    grid-area: exp-02;
+}
+#exp-03 {
+    grid-area: exp-03;
+}
+#exp-img {
+    grid-area: img;
+}
+
 
 /* LAYOUT - LIFE UI */
 .lifeUI {
