@@ -18,7 +18,7 @@ function template(state) {
             <h1 id="title">Title</h1>
             <section class="explanation-container">
                 <p id="exp-01">Lorem Ipsum text about Will 01</p>
-                <img id="exp-img" src="" width="500px">
+                <img id="exp-img" src="" style="height: 400px">
                 <p id="exp-02">Lorem Ipsum text about Will 02</p>
                 <p id="exp-03">Lorem Ipsum text about Will 02</p>
             </section>
