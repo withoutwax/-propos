@@ -1,0 +1,102 @@
+:root {
+    --color-black: black;
+    --color-dark-grey: #2B2E32;
+    --color-french-blue: blue;
+    --color-french-red: red;
+    --color-french-white: white;
+}
+
+body {
+    background-color: var(--color-black);
+    color: white;
+}
+h1 {
+    font-size: 2rem;
+}
+li {
+    font-size: 1.5em;
+}
+
+/* LAYOUT */
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn-ready {
+    color: var(--color-black);
+    background-color: white;
+
+    padding: 50px;
+    border: solid 6px blue;
+}
+#btn-ready:hover {
+    color: var(--color-french-red);
+    background-color: var(--color-french-white);
+}
+#btn-ready:active {
+    transform: translateY(4px);
+    box-shadow: 0 5px #666;
+}
+
+/* LAYOUT - LIFE UI */
+.lifeUI {
+    display: flex;
+}
+#life {
+    margin-left: 10px;
+}
+
+/* LAYOUT - GAMEOVER */
+.gameOver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#gameover-heading {
+    color: var(--color-red);
+    font-size: 3em;
+}
+
+/* LAYOUT - WIN */
+.win {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#win-header {
+    color: var(--color-green);
+    font-size: 3em;
+}
+
+/* ANIMATION */
+
+
+/* MODULAR - HIDE & APPEAR */
+.hide-fade {
+    opacity: 0;
+
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hide-gone {
+    display: none;
+
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.test-scale {
+    transform: scale(1.1);
+    opacity: .5;
+
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.appear-fade {
+    opacity: 1;
+
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}

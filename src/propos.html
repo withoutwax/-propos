@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rabbit Hole-</title>
+    <link rel="stylesheet" href="./propos.css">
+    <link rel="stylesheet" href="../css/utils.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico/favicon.ico">
+</head>
+
+<body>
+    <div class="introduction">
+        <h1>🇫🇷 SALUT! 🇫🇷</h1>
+        <h1>Je suis Will!</h1>
+        <h4>Bienvenue à la présentation de Will!</h4>
+        <!-- <p>Choose the answer by using the number on the keyboard!</p> -->
+        <br>
+        <p>Es-tu prêt?</p>
+        <br>
+        <br>
+        <br>
+        <div id="btn-ready" style="cursor: pointer" onclick="(function() {initialize();})()">
+            ENTREZ
+        </div>
+    </div>
+    <div class="explanation"></div>
+    <div class="lifeUI"></div>
+    <div class="questions"></div>
+    <div class="win"></div>
+    <div class="gameOver"></div>
+
+    <script>
+        document.addEventListener('keydown', function (e) {
+            switch (e.keyCode) {
+                case 89: // y
+                    if (question == undefined) {
+                        initialize();
+                    } else if (question == 'gameover') {
+                        location.reload();
+                    }
+                    break;
+                case 49: // 1
+                    guessAnswer(1, question);
+                    break;
+                case 50: // 2
+                    guessAnswer(2, question);
+                    break;
+                case 51: // 3
+                    guessAnswer(3, question);
+                    break;
+                case 52: // 4
+                    guessAnswer(4, question);
+                    break;
+                case 53: // 5
+                    guessAnswer(5, question);
+                    break;
+                case 82: // R - Restart
+                    location.reload();
+            }
+        });
+    </script>
+    <script src="propos.js"></script>
+</body>
+
+</html>
